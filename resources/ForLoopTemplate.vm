@@ -1,0 +1,23 @@
+<html>
+  <body>
+    Hello!
+    <table>
+    #foreach( $mud in $list )
+        <tr>
+          <td>
+            $mud.getBuildName()
+          </td>
+          <td>
+            $mud.getFinalResult()
+          </td>
+          <td>
+            $mud.getFinalResult()
+          </td>
+          <td>
+            $mud.getFinalResult()
+          </td>
+        </tr>
+    #end
+    </table>
+  </body>
+</html>
