@@ -8,6 +8,7 @@ public class BuildDetails {
 	private int 		compiletime;
 	private int  		unittesttime;
         
+	
 
     // one constructor
     public BuildDetails(String ifinalresult, int icompiletime, int iunittesttime, String ibuldname) {
