@@ -43,6 +43,7 @@ public class ReportGenerator {
 		 ve.init();
 		 
 		 
+		 
 		 VelocityContext ctx = new VelocityContext();
 		 
 		 ctx.put("name", "velocity");
