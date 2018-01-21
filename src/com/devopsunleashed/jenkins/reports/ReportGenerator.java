@@ -3,8 +3,6 @@ package com.devopsunleashed.jenkins.reports;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
@@ -50,7 +48,7 @@ public class ReportGenerator {
 		 ctx.put("name", "velocity");
 		 ctx.put("date", (new Date()).toString());
 		 
-		 List temp = new ArrayList();
+		 ArrayList<BuildDetails> temp = new ArrayList<BuildDetails>();
 		 temp.add(myBuildDetails1);
 		 temp.add(myBuildDetails2);
 		 temp.add(myBuildDetails3);
