@@ -12,7 +12,7 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 
 import com.devopsunleashed.jenkins.builddetails.BuildDetails;
 
-public class ReportGenerator {
+public class JenkinsReportGenerator {
 
 	public static void main(String[] args) {
 		 
@@ -20,20 +20,20 @@ public class ReportGenerator {
 		BuildDetails myBuildDetails2 = new BuildDetails();		
 		BuildDetails myBuildDetails3 = new BuildDetails();
 		
-		myBuildDetails1.setBuildname("Build 1");
-		myBuildDetails1.setCompiletime(12);
-		myBuildDetails1.setFinalresult("Success");
-		myBuildDetails1.setUnittesttime(22);
+		myBuildDetails1.setBuildName("Build 1");
+		myBuildDetails1.setBuildTime(12);
+		myBuildDetails1.setBuildResult("Success");
+
 		
-		myBuildDetails2.setBuildname("Build 2");
-		myBuildDetails2.setCompiletime(12);
-		myBuildDetails2.setFinalresult("Success");
-		myBuildDetails2.setUnittesttime(22);
+		myBuildDetails2.setBuildName("Build 2");
+		myBuildDetails2.setBuildTime(12);
+		myBuildDetails2.setBuildResult("Success");
+
 		
-		myBuildDetails3.setBuildname("Build 3");
-		myBuildDetails3.setCompiletime(12);
-		myBuildDetails3.setFinalresult("Success");
-		myBuildDetails3.setUnittesttime(22);
+		myBuildDetails3.setBuildName("Build 3");
+		myBuildDetails3.setBuildTime(12);
+		myBuildDetails3.setBuildResult("Success");
+
 		
 		
 		VelocityEngine ve = new VelocityEngine();

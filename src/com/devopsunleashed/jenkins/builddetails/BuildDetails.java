@@ -3,55 +3,48 @@ package com.devopsunleashed.jenkins.builddetails;
 public class BuildDetails {
 	
     // three fields
-	private String  	buildname;
-	private String  	finalresult;
-	private int 		compiletime;
-	private int  		unittesttime;
+	private String  	buildName;
+	private String  	buildResult;
+	private int 		buildTime;
         
-    // one constructor
-    public BuildDetails(String ifinalresult, int icompiletime, int iunittesttime, String ibuldname) {
-    	setFinalresult(ifinalresult);
-        setCompiletime(icompiletime);
-        setUnittesttime(iunittesttime);
+    // Constructor
+    public BuildDetails(String buildResult, int buildTime, String buildName) {
+    	this.buildName = buildName;
+        this.buildTime = buildTime;
+        this.buildResult = buildResult;
     }
     
+ // Constructor
     public BuildDetails() {
 
     }
     
     //Getters
-    public String getFinalResult() {
-    	return finalresult;
+    public String getBuildResult() {
+    	return buildResult;
     }
         
-    public int getUnitTestTime() {
-    	return unittesttime;
-    }
 
 	public String getBuildName() {
-		return buildname;
+		return buildName;
 	}
 
-	public int getCompileTime() {
-		return compiletime;
+	public int getBuildTime() {
+		return buildTime;
 	}
 
 	
 	// Setters
-	public void setBuildname(String buildname) {
-		this.buildname = buildname;
+	public void setBuildName(String buildName) {
+		this.buildName = buildName;
 	}
 	
-	public void setCompiletime(int compiletime) {
-		this.compiletime = compiletime;
+	public void setBuildTime(int buildTime) {
+		this.buildTime = buildTime;
 	}
 
-	public void setFinalresult(String finalresult) {
-		this.finalresult = finalresult;
-	}
-
-	public void setUnittesttime(int unittesttime) {
-		this.unittesttime = unittesttime;
+	public void setBuildResult(String buildResult) {
+		this.buildResult = buildResult;
 	}
       
 }
